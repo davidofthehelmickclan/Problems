@@ -32,7 +32,7 @@ int main()
 		string token;
 		stringstream ss(input);
 		while (ss >> token)
-			rocks.push_back(stod(token));
+			rocks.push_back(strtod(token, 0));
 		sort(rocks.begin(), rocks.end());
 		vector<vector<double> > groups;
 		vector<vector<double> > group;
